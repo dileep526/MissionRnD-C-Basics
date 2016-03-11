@@ -11,7 +11,14 @@ ERROR CASES:
 NOTES:
 */
 
+// swap two numbers
+
 void swap(int *a, int *b)
 {
-	
+	//swapping without using temporary variable
+
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
+
 }
